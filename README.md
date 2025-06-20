@@ -79,4 +79,26 @@ Bridges development and operations through automation.
 
 Builds and manages CI/CD pipelines for efficient, reliable deployments.
 
+# Technology Stack
+## Technology	Purpose
+### Django
+A high-level Python web framework used for building robust backend systems, handling authentication, routing, and RESTful/GraphQL APIs.
+
+### MySQL
+A reliable, relational database system used to store and manage structured application data like users, listings, and bookings.
+
+### GraphQL	
+A flexible API query language used to efficiently fetch and manipulate nested and complex data from the backend.
+
+### Docker	
+A containerization tool used to package the application and its dependencies for consistent development and deployment environments.
+
+### Git & GitHub
+Used for version control, team collaboration, and maintaining the project repository.
+
+### GitHub Actions
+A CI/CD automation tool used to build, test, and deploy the application seamlessly on every update.
+
+Markdown	Used to format documentation files like README.md for better readability and structure.
+
 
