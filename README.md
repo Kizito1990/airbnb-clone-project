@@ -1,4 +1,4 @@
-# airbnb-clone-project
+# Airbnb-clone-project
 Project Overview: Airbnb Clone
 The Airbnb Clone Project is a full-stack software development initiative designed to replicate the functionality and architecture of a real-world booking platform like Airbnb. The goal is to equip learners with hands-on experience in building scalable, secure, and collaborative web applications that follow industry best practices.
 
@@ -285,6 +285,32 @@ All API traffic is secured using HTTPS, and additional headers (e.g., Content-Se
 #### ✅ Why it matters: Prevents data interception during transmission and enforces secure browser behavior.
 
 These measures collectively ensure that the platform is secure, reliable, and trusted by users and developers alike. Security is a top priority at every stage of development and deployment.
+
+# 🔄 CI/CD Pipeline
+CI/CD (Continuous Integration and Continuous Deployment) is a development practice that automates the process of testing, building, and deploying applications. It ensures that code changes are automatically integrated, tested, and delivered to production or staging environments with minimal manual intervention.
+
+Implementing CI/CD in this project helps to:
+
+Maintain consistent code quality through automated testing
+
+Deploy updates quickly and reliably
+
+Catch and fix issues early in the development lifecycle
+
+Enable seamless team collaboration and faster feedback loops
+
+### 🛠️ Tools Used:
+GitHub Actions – Automates workflows such as running tests, linting code, and deploying updates when changes are pushed to the repository.
+
+### Docker – Packages the application into containers for consistent environments across development, testing, and deployment stages.
+
+### Docker Hub (or GitHub Container Registry) – Stores and manages Docker images for deployment.
+
+### CI/CD Scripts – Custom scripts to handle database migrations, server restarts, and environment setup.
+
+These tools work together to ensure the Airbnb Clone project is robust, maintainable, and production-ready at all times.
+
+
 
 
 
