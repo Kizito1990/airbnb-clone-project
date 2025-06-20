@@ -226,5 +226,32 @@ One Booking belongs to one User and one Property
 
 One Booking has one Payment
 
+# 🚀 Feature Breakdown
+The Airbnb Clone project includes several core features that simulate the functionality of a real-world booking platform. Each feature is designed to align with modern software development practices and enhance the overall user experience.
+
+### 🔐 User Management
+Handles user registration, authentication, and profile management. This feature supports both guests and hosts, enabling secure access, role-based permissions, and account customization.
+
+### 🏘️ Property Management
+Allows hosts to list, update, and manage properties for rent. Each listing includes details such as title, location, images, availability, and pricing—giving users full control over their rental offerings.
+
+### 📅 Booking System
+Enables guests to search for available properties, check availability, and make reservations. This feature ensures seamless booking flows and includes check-in/check-out management and conflict detection.
+
+### 💳 Payment Processing
+Handles secure payments for bookings. Integrates with a payment gateway to track transactions, store payment statuses, and ensure safe, verified processing for both guests and hosts.
+
+### ⭐ Review & Rating System
+Allows guests to leave reviews and ratings after completing a stay. This promotes transparency, trust, and helps users make informed decisions based on the experiences of others.
+
+### 🔍 Search & Filtering
+Supports advanced property search with filters like location, price range, availability, and property type. This improves user experience by helping guests find suitable accommodations quickly.
+
+### 🔒 API Security
+Implements authentication, authorization, and input validation to protect user data and prevent unauthorized access. This ensures the application is secure and trustworthy.
+
+### ⚙️ CI/CD Integration
+Automates testing, building, and deployment through tools like GitHub Actions and Docker. This ensures consistent, error-free delivery of updates and supports rapid, scalable development.
+
 
 
