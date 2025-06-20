@@ -253,5 +253,39 @@ Implements authentication, authorization, and input validation to protect user d
 ### ⚙️ CI/CD Integration
 Automates testing, building, and deployment through tools like GitHub Actions and Docker. This ensures consistent, error-free delivery of updates and supports rapid, scalable development.
 
+# 🔐 API Security
+Ensuring security in a platform like Airbnb is essential to protect sensitive user data, prevent unauthorized access, and build trust with users. Below are the core security measures implemented in this project:
+
+### 🔑 Authentication
+We implement token-based authentication (e.g., JWT) to verify the identity of users before granting access to protected routes. This ensures that only registered users can access their accounts, make bookings, and perform authorized actions.
+
+✅ Why it matters: Prevents unauthorized access to user profiles, bookings, and property listings.
+
+### 🛡️ Authorization
+Role-based access control (RBAC) is used to differentiate between guests and hosts, ensuring that users only have access to actions permitted for their role.
+
+✅ Why it matters: Ensures a guest cannot modify property listings and a host cannot access unrelated bookings.
+
+### 🚫 Rate Limiting
+API rate limiting is used to prevent abuse and reduce the risk of denial-of-service (DoS) attacks by limiting the number of requests a user or IP can make within a given timeframe.
+
+✅ Why it matters: Protects the server from overload and prevents brute-force attacks on login endpoints.
+
+### 🔍 Input Validation & Sanitization
+All incoming data is validated and sanitized to protect against SQL injection, cross-site scripting (XSS), and cross-site request forgery (CSRF) attacks.
+
+#### ✅ Why it matters: Prevents attackers from injecting malicious code or tampering with application behavior.
+
+### 🔒 Secure Payments
+Payment endpoints are protected and integrated with secure third-party payment gateways, ensuring end-to-end encryption and transaction validation.
+
+#### 📄 HTTPS & Secure Headers
+All API traffic is secured using HTTPS, and additional headers (e.g., Content-Security-Policy, X-Content-Type-Options) are configured to further enhance security.
+
+#### ✅ Why it matters: Prevents data interception during transmission and enforces secure browser behavior.
+
+These measures collectively ensure that the platform is secure, reliable, and trusted by users and developers alike. Security is a top priority at every stage of development and deployment.
+
+
 
 
