@@ -32,3 +32,51 @@ Documentation: Markdown
 
 Security: API authentication & authorization best practices
 
+# Team Roles
+ ## Team Roles Overview
+### 🔍 Business Analyst (BA)
+Translates business needs into clear, actionable requirements.
+
+Analyzes customer workflows and bridges the gap between stakeholders and developers.
+
+### 🎯  Product Owner (PO)
+Owns the product vision and strategy.
+
+Defines and prioritizes the product backlog to align with business goals and user needs.
+
+### 📅  Project Manager (PM)
+Ensures timely and budget-conscious delivery of the product.
+
+Facilitates team coordination, progress tracking, and stakeholder communication.
+
+### 🎨 UI/UX Designer
+Designs intuitive and visually appealing user interfaces.
+
+Crafts user journeys through research, wireframes, and prototyping to optimize experience and engagement.
+
+### 🏗️  Software Architect
+Defines the system's high-level structure and tech stack.
+
+Sets coding standards, selects tools, and ensures scalability and security.
+
+### 💻 Software Developer
+Implements front-end and back-end features.
+
+Solves technical issues, writes code, and builds application logic and integrations.
+
+### ✅  Quality Assurance (QA) Engineer
+Verifies that the product meets all functional and non-functional requirements.
+
+Conducts manual and exploratory testing and ensures quality at every stage.
+
+### ⚙️ Test Automation Engineer
+Develops and maintains automated test scripts.
+
+Enhances testing efficiency and coverage with a maintainable automation framework.
+
+### 🚀 DevOps Engineer
+Bridges development and operations through automation.
+
+Builds and manages CI/CD pipelines for efficient, reliable deployments.
+
+
