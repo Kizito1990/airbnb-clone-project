@@ -101,4 +101,130 @@ A CI/CD automation tool used to build, test, and deploy the application seamless
 
 Markdown	Used to format documentation files like README.md for better readability and structure.
 
+# Database Design
+This project models a simplified version of the Airbnb platform. Below are the key entities in the system, along with important fields and how they relate to one another:
+
+### 🔹 Users
+Represents guests and hosts using the platform.
+
+Key Fields:
+
+id: Unique identifier
+
+name: Full name of the user
+
+email: Email address (unique)
+
+is_host: Boolean to indicate if the user is a host
+
+date_joined: Account creation timestamp
+
+### Relationships:
+
+A user can own multiple properties
+
+A user can make multiple bookings
+
+A user can write multiple reviews
+
+### 🔹 Properties
+Represents listings available for rent.
+
+Key Fields:
+
+id: Unique identifier
+
+owner_id: Foreign key to Users (host)
+
+title: Property name
+
+location: City/address
+
+price_per_night: Cost per night
+
+### Relationships:
+
+A property belongs to one user (host)
+
+A property can have many bookings
+
+A property can have many reviews
+
+### 🔹 Bookings
+Represents a reservation made by a user.
+
+Key Fields:
+
+id: Unique identifier
+
+user_id: Foreign key to Users (guest)
+
+property_id: Foreign key to Properties
+
+check_in: Start date
+
+check_out: End date
+
+### Relationships:
+
+A booking belongs to one user
+
+A booking is for one property
+
+A booking can have one payment
+
+### 🔹 Reviews
+Represents feedback left by users after a stay.
+
+Key Fields:
+
+id: Unique identifier
+
+user_id: Foreign key to Users
+
+property_id: Foreign key to Properties
+
+rating: Numeric score (e.g., 1–5)
+
+comment: Text content of the review
+
+### Relationships:
+
+A review belongs to one user
+
+A review belongs to one property
+
+### 🔹 Payments
+Represents financial transactions for bookings.
+
+Key Fields:
+
+id: Unique identifier
+
+booking_id: Foreign key to Bookings
+
+amount: Total payment amount
+
+status: Payment status (e.g., paid, pending)
+
+timestamp: Date and time of payment
+
+### Relationships:
+
+A payment is linked to one booking
+
+A booking has one associated payment
+
+### 🔄 Entity Relationships Summary:
+One User can list many Properties
+
+One User can make many Bookings
+
+One Property can have many Bookings and Reviews
+
+One Booking belongs to one User and one Property
+
+One Booking has one Payment
+
+
 
